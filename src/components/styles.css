@@ -1,0 +1,465 @@
+/* app */
+.divApp {
+    width: 100vw;
+    min-height: 100vh;
+    background:hsl(214, 47%, 23%);
+    background: radial-gradient(circle, hsl(214, 47%, 23%) 0%, hsl(237, 49%, 15%) 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -100;
+  }
+
+/* header */
+.divHeader{
+    width: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 2px solid rgba(182, 182, 182, 0.5);
+    border-radius: 12px;
+    padding: 14px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divScore{
+    width: 140px;
+    height: 100px;
+    background-color: rgb(236, 236, 236);
+    filter: drop-shadow(0px 4px 4px rgba(8, 8, 8, 0.5));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pScore{
+    color: rgb(28, 39, 141);
+    padding-top: 10px;
+}
+
+.h1Score{
+    color: rgb(49, 49, 49);
+    font-size: 4em;
+    /* margin-bottom: 6px; */
+}
+
+/* buttons */
+.borderButton{
+    width: 157px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(39, 89%, 49%);
+    background: linear-gradient(339deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
+    border-bottom: 7px solid hsl(39, 87%, 41%);
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(8, 8, 8, 0.5));
+    cursor:pointer;
+}
+
+.paper{
+    background: hsl(230, 89%, 62%);
+    background: linear-gradient(339deg, hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%);
+    border-bottom: 7px solid hsl(230, 61%, 49%);
+}
+
+.scissors{
+    background: hsl(39, 89%, 49%);
+    background: linear-gradient(339deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
+    border-bottom: 7px solid hsl(39, 87%, 38%);
+}
+
+.rock{
+    background: hsl(349, 71%, 52%);
+    background: linear-gradient(339deg, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
+    border-bottom: 7px solid hsl(349, 70%, 41%);
+}
+
+.lizard{
+    background: hsl(261, 73%, 60%);
+    background: linear-gradient(339deg, hsl(261, 73%, 60%) 0%, hsl(261, 72%, 63%) 100%);
+    border-bottom: 7px solid hsl(261, 55%, 47%);
+}
+/* hsl(189, 59%, 53%) to hsl(189, 58%, 57%) */
+.spock{
+    background: hsl(189, 59%, 53%);
+    background: linear-gradient(339deg, hsl(189, 59%, 53%) 0%, hsl(189, 58%, 57%) 100%);
+    border-bottom: 7px solid hsl(189, 59%, 41%);
+}
+
+.butNewV{
+    width: 127px;
+    height: 122px;
+    border-bottom-width: 5px;
+}
+
+.borderButton:hover{
+    opacity:0.7;
+}
+
+.divButton{
+    width: 122px;
+    height: 115px;
+    border-radius: 50%;
+    background-color:rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 7px solid hsl(0, 0%, 81%);
+}
+
+.butNewV2{
+    width: 97px;
+    height: 92px;
+    border-bottom-width: 5px;
+}
+
+/* classic */
+.divClassic{
+    margin-top: 50px;
+    width: 470px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+/* newVersion */
+.divNewVersion{
+    margin-top: 50px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.divNewVersion1{
+    position: relative;
+    top: -30px;
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.divNewVersion2{
+    position: relative;
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* footer */
+.divFooter{
+    width: 90vw;
+    position: absolute;
+    top: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.buttonFooter{
+    background-color: transparent;
+    border: 2px solid rgba(182, 182, 182, 0.5);
+    border-radius: 12px;
+    padding: 10px 30px;
+    color: rgb(236, 236, 236);
+}
+
+.buttonFooter:hover{
+    color: hsl(214, 47%, 23%);
+    background-color: rgb(236, 236, 236);
+}
+
+/* modal rules */
+.divModalRules{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    border-radius: 12px;
+}
+
+.divrules{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 2em;
+}
+
+.newV{
+    margin-bottom: 0;
+}
+
+.rules{
+    color: hsl(214, 47%, 23%);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.close{
+    cursor: pointer;
+}
+
+/* answer */
+.divAnswer{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divPicked{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winner1{
+    position: absolute;
+    margin-top: 3em;
+    z-index: 0;
+}
+
+.space{
+    justify-content: center;
+}
+
+.textResult{
+    color: rgb(236, 236, 236);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    z-index: 2;
+}
+
+.ans {
+    font-size: 2em;
+    text-align: center;
+}
+
+.noButton{
+    width: 157px;
+    height: 157px;
+    border-radius: 50%;
+    background-color: hsl(215, 64%, 11%);
+}
+
+.nohov:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+.winner3{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: hsl(214, 47%, 23%);
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.winner4{
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    background-color: hsl(214, 52%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner5{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: hsl(214, 57%, 16%);
+}
+
+
+@media (max-width: 790px) {
+
+.divApp{
+    justify-content: flex-start;
+}
+    /* header */
+.divHeader{
+    margin-top: 2em;
+    width: 80vw;
+    height: 15vh;
+    padding: 10px 10px;
+}
+
+.imgLogo{
+    max-height: 15vh;
+    width: 30vw;
+}
+
+.divScore{
+    width: 35vw;
+    height: 15vh;
+}
+
+.pScore{
+    padding-top: 0px;
+}
+
+.h1Score{
+    font-size: 3em;
+}
+
+/* buttons */
+.borderButton{
+    width: 127px;
+    height: 122px;
+}
+
+.paper{
+    border-bottom: 5px solid hsl(230, 61%, 49%);
+}
+
+.scissors{
+    border-bottom: 5px solid hsl(39, 87%, 38%);
+}
+
+.rock{
+    border-bottom: 5px solid hsl(349, 70%, 41%);
+}
+
+.lizard{
+    border-bottom: 5px solid hsl(261, 55%, 47%);
+}
+
+.spock{
+    border-bottom: 5px solid hsl(189, 59%, 41%);
+}
+
+.butNewV{
+    width: 107px;
+    height: 102px;
+    border-bottom-width: 5px;
+}
+
+.divButton{
+    width: 92px;
+    height: 87px;
+    border-top: 5px solid hsl(0, 0%, 81%);
+}
+
+.butNewV2{
+    width: 77px;
+    height: 72px;
+    border-bottom-width: 5px;
+}
+
+.imgButton{
+    width: 40px;
+}
+
+.borderButton:hover{
+    opacity:1;
+}
+
+/* classic */
+.divClassic{
+    width: 90vw;
+    height: 90vw;
+}
+
+/* newVersion */
+.divNewVersion{
+    width: 90vw;
+    height: 90vw;
+}
+.divNewVersion1{
+    width: 90vw;
+}
+
+.divNewVersion2{
+    width: 90vw;
+}
+
+
+/* modal rules */
+.divModalRules{
+    height: 90vw;
+    width: 90vw;
+    margin: auto;
+    margin-top: 50%;
+
+}
+
+.divrules{
+    width: 80vw;
+    margin-bottom: 1em;
+}
+
+.newV{
+    margin-bottom: 0;
+}
+
+.imgModal{
+    width: 70vw;
+}
+
+/* answer */
+.divAnswer{
+    width: 90vw;
+    height: 300px;
+}
+
+.divPicked{
+    width: 40vw;
+}
+
+.winner1{
+    margin-top: 2em;
+}
+
+.space{
+    position: absolute;
+    margin-top: 55vh;
+}
+
+.textResult{
+    font-size: 1em;
+}
+
+.noButton{
+    width: 127px;
+    height: 127px;
+}
+
+.winner3{
+    width: 300px;
+    height: 300px;
+}
+.winner4{
+    width: 225px;
+    height: 225px;
+}
+
+.winner5{
+    width: 150px;
+    height: 150px;
+}
+
+}
