@@ -309,12 +309,11 @@
 }
 
 .imgLogo{
+    max-width: 18vh;
     max-height: 15vh;
-    width: 30vw;
 }
 
 .divScore{
-    width: 35vw;
     height: 15vh;
 }
 
@@ -380,35 +379,35 @@
 
 /* classic */
 .divClassic{
-    width: 90vw;
-    height: 90vw;
+    width: 300px;
+    height: 300px;
 }
 
 /* newVersion */
 .divNewVersion{
-    width: 90vw;
-    height: 90vw;
+    width: 300px;
+    height: 300px;
 }
 .divNewVersion1{
-    width: 90vw;
+    width: 300px;
 }
 
 .divNewVersion2{
-    width: 90vw;
+    width: 300px;
 }
-
 
 /* modal rules */
 .divModalRules{
-    height: 90vw;
-    width: 90vw;
-    margin: auto;
-    margin-top: 50%;
-
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px -150px;
 }
 
 .divrules{
-    width: 80vw;
+    width: 260px;
     margin-bottom: 1em;
 }
 
@@ -417,17 +416,17 @@
 }
 
 .imgModal{
-    width: 70vw;
+    width: 240px;
 }
 
 /* answer */
 .divAnswer{
-    width: 90vw;
+    width: 300px;
     height: 300px;
 }
 
 .divPicked{
-    width: 40vw;
+    width: 140px;
 }
 
 .winner1{

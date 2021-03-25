@@ -26,7 +26,7 @@ const NewVersion = ({classic,handleUserAnswer,userAnswer,handleCompTurn,computer
     return () => window.removeEventListener("resize", updateMedia)
 })
 
-const backgroundImg = !isDesktop ? {background: `url(${Pentagon}) center center/70vw 70vw no-repeat `} : {background: `url(${Pentagon}) no-repeat center`}
+const backgroundImg = !isDesktop ? {background: `url(${Pentagon}) center center/255px 255px no-repeat `} : {background: `url(${Pentagon}) no-repeat center`}
 
 
     return(

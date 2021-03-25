@@ -24,7 +24,7 @@ const Classic = ({classic,handleUserAnswer,userAnswer,handleCompTurn,computerAns
     return () => window.removeEventListener("resize", updateMedia)
 })
 
-const backgroundImg = !isDesktop ? {background: `url(${Triangle}) center center/70vw 70vw no-repeat `} : {background: `url(${Triangle}) no-repeat center`}
+const backgroundImg = !isDesktop ? {background: `url(${Triangle}) center center/210px 210px no-repeat `} : {background: `url(${Triangle}) no-repeat center`}
 
     return(
         <>
